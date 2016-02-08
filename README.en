@@ -6,9 +6,15 @@ Use it at your own risk!
 Installation
 ============
 1. # emerge -av layman eix
-2. add to /etc/layman/layman.cfg to "overlays:"
+2. one of:
+2a. a long way:
+    add to /etc/layman/layman.cfg to "overlays:"
     https://raw.github.com/alexdux/gnome2-overlay/master/overlay/gnome2.xml
-
+    # layman -L 
+    # layman -a gnome2
+or
+2b. a short way (but the warning at each layman overlays syncing is expected):
+    # layman -a gnome2 -o https://raw.github.com/alexdux/gnome2-overlay/master/overlay/gnome2.xml
 3. # layman -L 
    # layman -a gnome2
 4. # ln -s /var/lib/layman/gnome2/profiles/package.mask/gnome3 /etc/portage/package.keywords/gnome3 
