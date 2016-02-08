@@ -27,23 +27,19 @@ As usual, don't forget to sync overlay(s) from time to time (# layman -S)
 What version the Gnome 2 is used?
 =================================
 The latest available at official Gentoo tree.
+(approx. 2.30 + some Gentoo patches)
 
 
 Any Issues?
 ===========
 - Some rare icons (mostly at some games) disappeared.
   (What is exactly the way it was/is in the portage.)
-- Overlays disfiles not used, ebuilds update is needed.
-  (Stored as a backup)
-- Furthermore, ebuilds are not also used.
-  (Stored as a backup)
+- Some packets are not build.
 
 
 Technical Feedback
 ==================
 Please fill your reports at: https://github.com/alexdux/gnome2-overlay/issues/new
-Please add 'gnome2' in the feedback summary. Description is informal but provide
-enough information for the request.
 
 
 - Alex
