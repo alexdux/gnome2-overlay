@@ -7,7 +7,7 @@ Installation
 ============
 1. # emerge -av layman eix
 2. add to /etc/layman/layman.cfg to "overlays:"
-    https://raw.github.com/alexdux/gnome2-overlay/layman/gnome2.xml
+    https://raw.github.com/alexdux/gnome2-overlay/master/layman/gnome2.xml
 
 3. # layman -L 
    # layman -a gnome2
