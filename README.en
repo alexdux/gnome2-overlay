@@ -7,7 +7,8 @@ Installation
 ============
 1. # emerge -av layman eix
 2. add to /etc/layman/layman.cfg to "overlays:"
-    https://async-emerge.googlecode.com/svn/distfiles/layman/gnome2-overlay.xml
+    https://raw.github.com/alexdux/async-emerge/master/distfiles/layman/gnome2-overlay.xml
+
 3. # layman -L 
    # layman -a gnome2
 4. # ln -s /var/lib/layman/gnome2/profiles/package.mask/gnome3 /etc/portage/package.keywords/gnome3 
@@ -40,7 +41,7 @@ Any Issues?
 
 Technical Feedback
 ==================
-Please fill your reports at: http://code.google.com/p/async-emerge/issues/list
+Please fill your reports at: https://github.com/alexdux/gnome2-overlay/issues/new
 Please add 'gnome2' in the feedback summary. Description is informal but provide
 enough information for the request.
 
