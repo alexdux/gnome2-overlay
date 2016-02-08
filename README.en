@@ -15,12 +15,10 @@ Installation
 or
 2b. a short way (but the warning at each layman overlays syncing is expected):
     # layman -a gnome2 -o https://raw.github.com/alexdux/gnome2-overlay/master/overlay/gnome2.xml
-3. # layman -L 
-   # layman -a gnome2
-4. # ln -s /var/lib/layman/gnome2/profiles/package.mask/gnome3 /etc/portage/package.keywords/gnome3 
+3. # ln -s /var/lib/layman/gnome2/profiles/package.mask/gnome3 /etc/portage/package.keywords/gnome3 
    # ln -s /var/lib/layman/gnome2/profiles/package.use/gnome3 /etc/portage/package.use/gnome3
    # ln -s /var/lib/layman/gnome2/profiles/package.unmask/gnome2 /etc/portage/package.unmask/gnome2
-5. # emerge -atuvDN @world
+4. # emerge -atuvDN @world
    # emerge -ac
    # emerge -av @preserved-rebuild
 
