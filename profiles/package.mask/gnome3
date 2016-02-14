@@ -152,6 +152,5 @@ gnome-extra/office-runner
 >=x11-misc/xdg-user-dirs-gtk-0.10
 # 2014-07-18
 >=dev-libs/vala-common-0.24
-
-# tmp internal vanilla-sources (reisers broken)
-=sys-kernel/vanilla-sources-3.16*
+# 2015-02-14
+>=gnome-mplayer-1.0.9
