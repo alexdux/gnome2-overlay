@@ -7,7 +7,7 @@ GCONF_DEBUG="yes"
 GNOME2_LA_PUNT="yes"
 GNOME_TARBALL_SUFFIX="bz2"
 
-inherit gnome2 eutils autotools
+inherit gnome2 eutils autotools python
 
 DESCRIPTION="Utilities for the Gnome desktop"
 HOMEPAGE="https://live.gnome.org/GnomeUtils"
