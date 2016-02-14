@@ -154,3 +154,4 @@ gnome-extra/office-runner
 >=dev-libs/vala-common-0.24
 # 2015-02-14
 >=media-video/gnome-mplayer-1.0.9
+>=www-plugins/gecko-mediaplayer-1.0.9
