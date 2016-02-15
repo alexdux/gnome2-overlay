@@ -1,10 +1,12 @@
 
-              This is TEMPORARY UNOFFICIAL Gnome2 overlay.
+              This is unofficial Gnome2 overlay.
 Use it at your own risk!
 
 
 Installation
 ============
+
+Option A: an overlay with layman
 1. # emerge -av layman eix
 2. one of:
 2a. a long way:
@@ -15,17 +17,31 @@ Installation
 or
 2b. a short way (but the warning at each layman overlays syncing is expected):
     # layman -L -a gnome2 -o https://raw.github.com/alexdux/gnome2-overlay/master/overlay/gnome2.xml
-3. # ln -s /var/lib/layman/gnome2/profiles/package.mask/gnome3 /etc/portage/package.keywords/gnome3 
+    
+Option B: a repo with the new native way
+1. add a new repo to the portage
+# cat > /etc/portage/repos.conf/gnome2.conf
+[gnome2]
+location = /usr/portage/overlays/gnome2/
+sync-type = git
+sync-uri = https://github.com/alexdux/gnome2-overlay.git
+auto-sync = true
+^D
+
+Common part:
+3. link masks to portage
+   # ln -s /var/lib/layman/gnome2/profiles/package.mask/gnome3 /etc/portage/package.keywords/gnome3 
    # ln -s /var/lib/layman/gnome2/profiles/package.use/gnome3 /etc/portage/package.use/gnome3
    # ln -s /var/lib/layman/gnome2/profiles/package.unmask/gnome2 /etc/portage/package.unmask/gnome2
-4. # emerge -atuvDN @world
+4. update world
+   # emerge -atuvDN @world
    # emerge -ac
    # emerge -av @preserved-rebuild
 
 
 Usage
 =====
-As usual, don't forget to sync overlay(s) from time to time (# layman -S)
+As usual, don't forget to sync overlay/repo from time to time
 
 
 What version the Gnome 2 is used?
@@ -37,13 +53,8 @@ The latest available at official Gentoo tree.
 Any Issues?
 ===========
 - Some rare icons (mostly at some games) disappeared.
-  (What is exactly the way it was/is in the portage.)
-- Some packets are not build.
-
-
-Technical Feedback
-==================
-Please fill your reports at: https://github.com/alexdux/gnome2-overlay/issues/new
+- Some packets are not build. 
+Please fill issue here: https://github.com/alexdux/gnome2-overlay/issues/new
 
 
 - Alex
