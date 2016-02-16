@@ -9,7 +9,7 @@ Installation
 1. add a new repo to the portage
 # cat > /etc/portage/repos.conf/gnome2.conf
 [gnome2]
-location = /usr/portage/overlays/gnome2/
+location = /usr/overlays/gnome2/
 sync-type = git
 sync-uri = https://github.com/alexdux/gnome2-overlay.git
 auto-sync = true
@@ -19,10 +19,10 @@ auto-sync = true
 // # layman -a gnome2 -o https://raw.github.com/alexdux/gnome2-overlay/master/overlay/gnome2.xml
 
 2. link masks to portage
-   # ln -s /usr/portage/overlays/gnome2/profiles/package.mask/gnome3 /etc/portage/package.keywords/gnome3 
-   # ln -s /usr/portage/overlays/gnome2/profiles/package.use/gnome3 /etc/portage/package.use/gnome3
-   # ln -s /usr/portage/overlays/gnome2/profiles/package.unmask/gnome2 /etc/portage/package.unmask/gnome2
-   (change /usr/portage/overlays/ to /var/lib/layman/ if use layman)
+   # ln -s /usr/overlays/gnome2/profiles/package.mask/gnome3 /etc/portage/package.keywords/gnome3 
+   # ln -s /usr/overlays/gnome2/profiles/package.use/gnome3 /etc/portage/package.use/gnome3
+   # ln -s /usr/overlays/gnome2/profiles/package.unmask/gnome2 /etc/portage/package.unmask/gnome2
+   (change /usr/overlays/ to /var/lib/layman/ if use layman)
 3. update world
    # emerge -atuvDN @world
    # emerge -ac
