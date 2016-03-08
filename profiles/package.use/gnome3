@@ -11,3 +11,4 @@ dev-libs/totem-pl-parser quvi
 # wrkarnd
 xfce-base/xfdesktop -thunar
 
+www-client/epiphany -introspection
