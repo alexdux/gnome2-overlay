@@ -14,3 +14,4 @@ xfce-base/xfdesktop -thunar
 www-client/epiphany -introspection
 
 media-video/totem -tracker
+dev-libs/libgcrypt -doc
