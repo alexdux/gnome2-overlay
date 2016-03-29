@@ -12,3 +12,5 @@ dev-libs/totem-pl-parser quvi
 xfce-base/xfdesktop -thunar
 
 www-client/epiphany -introspection
+
+media-video/totem -tracker
