@@ -57,7 +57,7 @@ RDEPEND=">=dev-libs/glib-2.33.12:2
 	ios? (
 		>=app-pda/libimobiledevice-1.1.0:=
 		>=app-pda/libplist-1:= )
-	samba? ( >=net-fs/samba-3.4.6[smbclient] )
+	samba? ( >=net-fs/samba-3.4.6[client] )
 	systemd? ( sys-apps/systemd )
 	udev? (
 		cdda? ( || ( dev-libs/libcdio-paranoia <dev-libs/libcdio-0.90[-minimal] ) )
