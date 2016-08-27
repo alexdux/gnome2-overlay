@@ -52,6 +52,7 @@ src_prepare() {
 
 	# Fix building -python, Gnome bug #596660.
 	epatch "${FILESDIR}/${PN}-2.30.0-fix-automagic-python-support.patch"
+	epatch "${FILESDIR}/${PN}-2.30.0-fix-weather-noaa-gov.patch"
 
 	eautoreconf
 	gnome2_src_prepare
